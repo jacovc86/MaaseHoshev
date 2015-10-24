@@ -1,0 +1,660 @@
+/*
+Theme Colors:
+orange: #d91;
+dark-gray: #332C2F;
+sodt-gray: #594D52;
+light-gray: #C4BEC1;
+dark-green: #24BF39;
+
+*/
+
+/*General Styling
+body, notices, hide, li, a, input, required,suggestion
+*/
+    ::selection{ background-color: #E13300; color: white; }
+    ::moz-selection{ background-color: #E13300; color: white; }
+    ::webkit-selection{ background-color: #E13300; color: white; }
+    * {
+            margin:0;
+            padding:0;
+    }
+    body {
+            background-color: #fff;
+            
+            font: 13px/20px normal Helvetica, Arial, sans-serif;
+            color: #4F5155;
+    }
+    .notice {
+            font-family: Helvetica, Arial, sans-serif;
+            border-bottom: 1px #ccc solid;
+    }
+    #success {
+            background:#24BF39;
+            color:#1B1F1B;
+            font-weight:bold;
+
+    }
+    #warning {
+            background:#E8B717;
+            color:#F0DFAA;
+            font-weight:bold;
+    }
+    #failure {
+            background:#C91C1C;
+            color:#EDAFAF;
+            font-weight:bold;
+    }
+    .hide {
+        display:none;
+    }
+    li {
+        list-style:none;
+    }
+    a {
+        text-decoration: none;
+    }
+    a.under-line:hover {
+        text-decoration: underline;
+        color:#1B1F1B;
+    }
+    input {
+        line-height:2;
+    }
+    .required {
+	background: #fff url('/media/images/required.png') no-repeat left;
+    }
+    p.suggestion {
+        display:inline;
+        border-top:1px #594D52 groove;
+        border-bottom:1px #594D52 groove;
+        background:#F0DFAA;
+        color:#9E0D0D;
+        font-size:1em;
+        font-weight: bold;
+    }
+    a.no-decor, a.no-decor:visited {
+        text-decoration:none;
+        color:#000;
+    }
+    .green {
+        background:#222;
+    }
+    
+    
+/* End of General */
+
+
+/* Login Page 
+
+*/
+    div.login_top {
+        width:100%;
+        height:18em;
+        background:#332C2F;
+        border-bottom:8px #d91 solid;
+        box-shadow: 0px 5px 6px #ccc;
+        margin-bottom:4em;
+        position:relative;
+    }
+
+/* End of login page */
+
+
+/* Top 
+top div, logout button, logo, session bar, top menus, profile-top
+*/
+    
+    div.top {
+        width:100%;
+        height:8em;
+        background:#332C2F;
+        border-bottom:8px #d91 solid;
+        box-shadow: 0px 5px 6px #ccc;
+        margin-bottom:4em;
+        position:relative;
+    }
+    #logout_btn {
+        background:#9E0D0D;
+    }
+    div.logo {
+            float:right;
+            margin:1em;
+    }
+    #logo_img {
+        float:left;
+        width:13em;
+        height:4em;
+    }
+    div#session_time {
+        width:20em;
+        height:1.5em;
+        display:block;
+        position:absolute;
+        bottom:1em;
+        left:14em;
+    }
+    div#session_text {
+        font-family:  Helvetica, Arial, sans-serif;
+        font-size:0.9em;
+    }
+    div.session_bar {
+        float:left;
+        height:0.3em;
+        width:0px;
+    }
+    div#top_menu {
+        position:absolute;
+        bottom:0px;
+        right:1.5em;
+
+    }
+    div#user_menu {
+        position:absolute;
+        top:0px;
+        left:1.5em;
+    }
+
+    .horizontal li {
+        display:inline-block;
+        background:#594D52;
+        border-top-left-radius:0.5em;
+        border-top-right-radius:0.5em;
+        line-height:1.5;
+        color:#fff;
+        font-size:1.2em;
+        font-weight:bold;
+        padding:0.2em;
+        padding-right:0.4em;
+        padding-left:0.4em;
+        cursor:pointer;
+    }
+    div#user_menu .horizontal li {
+        border-radius:0px;
+        border-bottom-left-radius:0.5em;
+        border-bottom-right-radius:0.5em;
+    }
+    ul.nav li.dropdown {
+        padding-right:1.2em;
+        background:#594D52 url('/media/images/nav_down_arrow.png') no-repeat 95% 50%;
+    }
+    .nav.selected {
+        background:#d91;
+    }
+    #profile_top {
+        position:absolute;
+        bottom:0em;
+        left:0em;
+        width:22em;
+        height:5em;
+        color:#fff;
+        font-weight:bold;
+    }
+/* End of top */
+
+/* Dashboard 
+right div, legend, 
+*/
+div#main_right {
+    float:right;
+    width:80em;
+    margin:0.6em;
+}
+legend.dashboard {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:2.1em;
+    font-weight:bold;
+    color:#21638F;
+    margin:0.5em;
+    background: #fff url('/media/images/invoice.png') no-repeat 0% 10%;
+    padding-left:50px;
+}
+ul.front_nav  li.dashboard{
+    padding:2em;
+    max-width:70em;
+    border-radius:0.5em;
+}
+.front_nav li ul li{
+    
+    padding:0.2em;
+    height:1.4em;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size:1.5em;
+    color:#332C2F;
+    font-weight:bold;
+    background:#fff;
+    text-shadow:1px 1px 2px #594D52;
+    display:inline;
+    margin:0.5em; 
+}
+.front_nav li.plus_doc {
+    border: 1px #57B82A solid;
+    border-right: 2px #AD0E4E groove; 
+    border-bottom: 2px #AD0E4E groove; 
+    background:#FBFFCC;
+    width:10em;
+    display:inline-block;
+}
+
+/* End of Dashboard */
+
+
+/* Settings
+
+*/
+
+#settings_wrapper {
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#settings_container {
+    border:2px #24BF39 groove;
+    padding:1em;
+}
+div.settings_tab {
+    display:inline-block;
+    width:8em;
+    height:1em;
+    background:#ccc;
+    color:#000;
+    font-size:1.6em;
+    font-weight:bold;
+    margin-left:2em;
+    border-top:2px #777 solid;
+    text-align:center;
+    padding:0.3em;
+    cursor:pointer;
+} 
+input.settings {
+    margin:0.3em;
+    border-radius: 0.2em;
+    border: 1px #888 double;
+}
+/* Client 
+@new client: legend, 
+*/
+div#view_client {
+    width:90%;
+    margin:5%;
+    border-bottom:1px #345345 solid;
+    border-left: 2px #345345 solid;
+}
+form.new_client {
+    width:98%;
+}
+legend.new_client {
+    font-size:1.6em;
+    font-family: sans-serif;
+    color: #9E0D0D;
+    font-weight:bold;
+    background:#D0D0D0;
+
+    line-height:2.2;
+    width:100%;
+}
+span.customer_name {
+    color:#AD0E4E;
+    font-size:1em;
+}
+legend.inline {
+    font-size:1.1em;
+    color: #9E0D0D;
+    font-weight:bold;
+    background:#D0D0D0;
+}
+ul.new_client {
+    float:right;
+}
+ul.new_client li {
+    border-right:3px #24BF39 solid;
+    border-bottom:1px #24BF39 inset;
+    padding-right:2em;
+    margin-top:1em;
+}
+label {
+    font-size:1.3em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:bold;
+}
+input.new_client, textarea.new_client {
+    resize:none;
+    line-height: 1.4;
+    font-size:1.2em;
+    color:#332C2F;
+    font-weight:bold;
+    margin:1em;
+    border:2px #ccc solid;
+}
+input#newclient_submit {
+    font-size:0.9em;
+    float:left;
+    margin:0;
+    padding:0;
+    border:3px #888 groove;
+    padding:0.2em;
+    border-radius: 0.3em;
+}
+
+
+/*
+Clients List
+*/
+#all_clients_upper_menu li{
+    display:inline;
+    line-height:2;
+    background:#3A5E0D;
+    font-weight:bold;
+    font-size:1em;
+    font-family: Helvetica, Arial, sans-serif;
+    padding:0.2em;
+    margin:0.3em;
+    border-bottom:2px #E8B717 solid;
+    box-shadow: 0px 0.3em 0.2em #ccc;
+    
+}
+#all_clients_upper_menu a {
+    color:#fff;
+}
+#all_clients {
+    border-spacing: 0px;
+}
+#all_clients tr:nth-child(even) {
+    background:#CFCFCF;
+}
+#all_clients thead {
+    background:#332C2F;
+    color:#fff;
+}
+#all_clients tr {
+    height:1em;
+    margin:0;
+}
+#all_clients tbody tr:hover {
+    border: 2px #B6F59D groove;
+}
+#all_clients td {
+    color:#332C2F;
+    font-size:1.3em;
+    padding:0.6em;
+    font-family: Helvetica, Arial, sans-serif;
+    border:0;
+    text-align:center;
+}
+#all_clients td a {
+    font-weight:bold;
+    color:#332C2F;
+}
+#all_clients td a:hover {
+    text-decoration: underline;
+}
+#client_card_nav {
+    display:inline;
+    position:relative;
+    float:left;
+    margin-left:0.8em;
+    
+}
+#client_card_nav a{
+    font-size:0.8em;
+    font-weight:bold;
+    
+}
+#client_card_nav li {
+    display:inline;
+    color:#fff;
+    background:#596069;
+    margin:0.3em;
+    padding:0.3em;
+    border-radius: 0.3em;
+}
+#allclients_form input {
+    line-height:1;
+    height:1.3em;
+    width:3em;
+    margin:0;
+}
+#client_card_nav li:hover {
+    background:#345345;
+}
+
+/* Client Card
+    @contact: upper_menu, table, add_contact
+*/
+#newclient_form {
+    display:inline-block;
+}
+#client_card_upper_menu {
+    display:inline-block;
+    float:right;
+}
+#client_card_upper_menu li{
+    display:inline;
+    background:#3A5E0D;
+    color:#fff;
+    padding:0.2em;
+    margin-left:0.5em;
+    font-size:1.2em;
+    font-weight:bold;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    
+}
+table#client_contacts {
+    display:inline-block;
+    border-right:4px #596069 groove;
+}
+table#client_contacts thead {
+    background: #332C2F;
+    color:#fff;
+    font-size:1.2em;
+}
+
+table#client_contacts th {
+    width: 8em;
+    box-shadow: 2px 3px 3px #ccc;
+}
+table#client_contacts th:first-child {
+    width: 3em;
+}
+table#client_contacts tr {
+    font-size:1.2em;
+    line-height:1.5;
+}
+table#client_contacts tr td {
+    border-bottom:1px #ccc dashed;
+    border-left: 1px #ddd dashed;
+    padding:0.2em;
+}  
+table#client_contacts th:last-child {
+    border-top-left-radius: 0.5em;
+}
+table#client_contacts th#contact_email {
+    width:15em;
+}
+div#add_contact {
+    width:8.5em;
+    height:1.3em;
+    background:#74C215 url('/media/images/plus20x20.png') right no-repeat;
+    color:#fff;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:left;
+    border-radius: 0.2em;
+    border:1px #332C2F groove;
+    margin:0.5em;
+    padding:0.2em;
+    cursor:pointer;
+}
+div#add_contact_form {
+    
+}
+div#add_contact_form label {
+    line-height:2;
+}
+
+input.add_contact {
+    margin:1em;
+}
+input#addcontact {
+    background:#57B82A;
+    color:#fff;
+    font-size:1.1em;
+    border:2px #1B1F1B solid;
+    border-radius:0.4em;
+    padding-right:0.4em;
+    padding-left:0.4em;
+    padding-top:0.1em;
+    font-weight: bold;
+}
+div#leftpanel_clientcard {
+    width:15%;
+    float:left;
+}
+#leftpanel_clientcard_list li {
+    line-height: 2;
+    text-align:center;
+    padding:0.1em;
+    font-size:1.2em;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:#fff;
+    margin-bottom: 0.4em;
+    background: #21638F;
+    box-shadow: 2px 2px 2px #C4BEC1;
+    border-bottom-left-radius:0.5em;
+    cursor:pointer;
+}
+#leftpanel_clientcard_list li:hover {
+    background:#345345;
+}
+
+
+/* Docs - Invoice
+form,
+*/
+div.new_doc {
+    margin:2em;
+    width:95%;
+}
+form.new_doc fieldset {
+    border:0px;
+}
+legend.new_doc {
+    height:12em;
+    width:100%;
+    background:#F2E7D5;
+    padding:0.5em;
+}
+legend.new_doc h1 {
+    height:1.2em;
+    background:#332C2F;
+    color:#fff;
+    font-size:1.5em;
+    font-weight: bold;
+    margin:0.5em;
+    margin-right:-1em;
+    padding:0.3em;
+}
+legend.new_doc h2 {
+        color:#d91;
+        font-weight:bold;
+        font-size:1.4em;
+}
+legend.new_doc h2 {
+    
+}
+legend.new_doc p {
+    color:#332C2F;
+    font-size:1.1em;
+    font-weight: normal;
+    display:inline-block;
+    padding:0.3em;
+}
+legend.new_doc input[type=text] {
+    margin:1em;
+    border-radius: .4em;
+    border:2px #4F5155 groove;
+    font-size: 1.3em;
+    padding:0.3em;
+    line-height:1;
+}
+legend.new_doc input[type=submit] {
+    width:8em;
+    height:2em;
+    color:#4F5155;
+    font-weight:bold;
+    letter-spacing: .1em;
+    line-height:3;
+}
+
+#inner_invoice {
+    margin:3em;
+}
+input.new_doc {
+    margin-right:0.5em;
+    border-radius: 0.5em;
+    border:2px #ccc groove;
+}
+
+/*
+Product - product view
+
+*/
+div#view_product {
+    width:80%;
+    margin:5%;
+}
+legend.new_product {
+    width:100%;
+    height:1em;
+    background: #666;
+    color:#fff;
+    font-size:1.3em;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: -1px -1px #ccc;
+    padding:0.2em;
+}
+form.new_product {
+    padding:1em;
+    padding-bottom:5em;
+    border: 2px #332C2F groove;
+    border-bottom-right-radius: 5em;
+}
+label.new_product {
+    font-size:.9em;
+}
+input.new_product, textarea.new_product {
+    resize:none;
+    margin:1em;
+    border:2px #888 outset;
+    border-radius: 0.3em;
+   
+}
+ul.new_product {
+    margin:1em;
+    padding:1em;
+}
+
+/*Settings
+
+*/
+table#user_list {
+    width:80%;
+    
+}
+table#user_list tr td {
+    width:5em;
+    border:1px #888 groove;
+}
+.small_button {
+    border:2px #332C2F solid;
+    width:8em;
+    height:1.5em;
+    color:#fff;
+    font-size:1.2em;
+    font-weight: bold;
+    border-radius:0.5em;
+    text-align:center;
+    cursor:pointer;
+}
